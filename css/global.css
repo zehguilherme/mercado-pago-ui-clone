@@ -1,0 +1,51 @@
+:root {
+  --blue-primary-01: #009ee3;
+  --blue-primary-02: #007eb5;
+  --blue-primary-03: #005e88;
+
+  --blue-secondary-01: #479ad126;
+  --blue-secondary-02: #479ad14d;
+  --blue-secondary-03: #479ad173;
+
+  --dark-01: #000000;
+  --dark-02: #333333;
+  --dark-03: #666666;
+  --dark-04: #c5c5c5;
+
+  --light-01: #ffffff;
+  --light-02: #f5f5f5;
+  --light-03: #e5e5e5;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+@media only screen and (max-width: 1080px) {
+  html {
+    font-size: 93.75%;
+  }
+}
+
+@media (max-width: 720px) {
+  html {
+    font-size: 87.5%;
+  }
+}
+
+html,
+body {
+  font-family: "Raleway", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Desktop */
+@media only screen and (min-width: 768px) {
+}
+
+/* Mobile */
+/* @media only screen and (max-width: 768px) {
+} */

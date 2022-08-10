@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"
+        integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./css/global.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/footer.css">
+
+    <title>Mercado Pago | Agora vai, faça mais com seu dinheiro</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="logo-main-links-container">
+            <a href="./index.html" class="logo-link">
+                <img src="./assets/logo_small.png" alt="Mercado Pago Logo" class="logo-small">
+            </a>
+
+            <nav class="main-navbar">
+                <ul class="navlink-list">
+                    <li class="navlink-list-item">
+                        <a href="#" class="navlink enter">Entre</a>
+                    </li>
+                    <li class="navlink-list-item">
+                        <a href="#" class="navlink account-create">Crie a sua conta</a>
+                    </li>
+
+                    <a href="#" class="mobile-toggle"></a>
+
+                    <!-- <li class="navlink-list-item">
+                        <a href="#" class="navlink account">
+                            Conta Mercado Pago
+                        </a>
+                    </li>
+
+                    <li class="navlink-list-item">
+                        <a href="#" class="navlink sell-tools">
+                            Ferramentas para vender
+                        </a>
+                    </li>
+
+                    <li class="navlink-list-item">
+                        <a href="#" class="navlink help">
+                            Ajuda
+                        </a>
+                    </li> -->
+                </ul>
+            </nav>
+        </div>
+
+        <nav class="secondary-navbar">
+            <ul class="navlink-list-container">
+                <li class="navlink-list-item">
+                    <a href="#" class="navlink account">
+                        <svg class="navlink-icon account-icon" width="24" height="24"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <g fill="none" fill-rule="evenodd">
+                                <path d="M0 0h24v24H0z"></path>
+                                <path d="M0 0h24v24H0z"></path>
+                                <path
+                                    d="M15.272 1.482a2.75 2.75 0 012.745 2.583l.005.167v3.296h-1.5l-.001-1.56H6.03v13.768c0 .647.492 1.18 1.122 1.243l.128.007h7.992a1.25 1.25 0 001.243-1.122l.007-.128v-.216h1.5v.216a2.75 2.75 0 01-2.583 2.745l-.167.005H7.28a2.75 2.75 0 01-2.745-2.583l-.005-.167V4.232a2.75 2.75 0 012.583-2.745l.167-.005h7.992zm7.247 7.503v9.013H9.027V8.985H22.52zm-1.501 1.5H10.527v6.012h10.491v-6.012zm-5.245 1.006a2 2 0 110 4 2 2 0 010-4zm0 1.5a.5.5 0 100 1 .5.5 0 000-1zm-.501-10.009H7.28a1.25 1.25 0 00-1.244 1.123l-.006.127v.235h10.491v-.235A1.25 1.25 0 0015.4 2.99l-.127-.007z"
+                                    fill="#000" fill-rule="nonzero"></path>
+                            </g>
+                        </svg>
+
+                        Conta Mercado Pago
+                    </a>
+                </li>
+
+                <hr class="separator">
+
+                <li class="navlink-list-item">
+                    <a href="#" class="navlink sell-tools">
+                        <svg class="navlink-icon store-icon" width="24" height="24" xmlns="http://www.w3.org/2000/svg">
+                            <g fill="none" fill-rule="evenodd">
+                                <path d="M0 0h24v24H0z"></path>
+                                <path d="M0 0h24v24H0z"></path>
+                                <path
+                                    d="M19.82 1.75l2.915 3.845V8.49c0 .892-.366 1.698-.957 2.277v11.407h-11.26l-.01-6.566H7.481v6.566H2.225l-.001-11.406a3.179 3.179 0 01-.958-2.278V5.596l2.9-3.846H19.82zm-2.789 8.698l-.09.11a3.181 3.181 0 01-2.245 1.115l-.18.005a3.181 3.181 0 01-2.427-1.12l-.089-.11-.09.11a3.181 3.181 0 01-2.245 1.115l-.18.005a3.181 3.181 0 01-2.427-1.12l-.09-.11-.088.11a3.181 3.181 0 01-2.246 1.115l-.18.005c-.252 0-.496-.029-.73-.084l-.001 9.08h2.258v-6.565h6.025l.01 6.565h8.261v-9.08a3.198 3.198 0 01-3.157-1.036l-.089-.11zm1.731 3.66v4.487h-5.254v-4.486h5.254zm-1.5 1.5h-2.255v1.486h2.255v-1.486zM19.075 3.25H4.912L2.765 6.096V8.49c0 .883.678 1.608 1.543 1.682l.145.006c.933 0 1.689-.756 1.689-1.688v-.75h1.654v.75a1.688 1.688 0 003.377 0v-.75h1.654v.75a1.688 1.688 0 003.377 0v-.75h1.654v.75a1.688 1.688 0 003.377 0l-.001-2.392-2.159-2.848z"
+                                    fill="#000" fill-rule="nonzero"></path>
+                            </g>
+                        </svg>
+
+                        Ferramentas para vender
+                    </a>
+                </li>
+
+                <hr class="separator">
+
+                <li class="navlink-list-item">
+                    <a href="#" class="navlink help">
+                        <svg class="navlink-icon help-icon" xmlns:xlink="http://www.w3.org/1999/xlink"
+                            xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                            <path fill-opacity="0.8"
+                                d="M12 .805c6.213 0 11.25 5.037 11.25 11.25S18.213 23.305 12 23.305.75 18.268.75 12.055 5.787.805 12 .805zm0 1.5c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75-4.365-9.75-9.75-9.75zm.135 13.698c.612 0 1.134.504 1.134 1.116 0 .612-.522 1.134-1.134 1.134-.612 0-1.116-.522-1.116-1.134 0-.612.504-1.116 1.116-1.116zm.162-10.134c2.232 0 3.582 1.224 3.582 2.808 0 1.494-1.026 2.232-1.962 2.88-.72.522-1.386.972-1.386 1.728 0 .288.18.63.432.846l-1.332.504c-.45-.432-.666-.936-.666-1.512 0-1.206.864-1.818 1.674-2.394.72-.504 1.386-.954 1.386-1.782 0-.792-.612-1.476-1.908-1.476-1.224 0-2.052.54-2.682 1.368L8.391 7.687c.882-1.134 2.232-1.818 3.906-1.818z">
+                            </path>
+                        </svg>
+
+                        Ajuda
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main"></main>
+
+    <footer class="footer"></footer>
+</body>
+
+</html>
