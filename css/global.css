@@ -36,6 +36,7 @@
 html,
 body {
   font-family: "Raleway", sans-serif;
+  background-color: var(--light-02);
 }
 
 a {
