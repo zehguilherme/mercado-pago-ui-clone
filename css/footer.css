@@ -1,0 +1,23 @@
+.footer {
+  background-color: var(--light-01);
+  padding: 4rem 1.4286rem;
+}
+
+.social-network-list-container {
+  padding: 3.4286rem 0;
+}
+
+.social-network-list {
+  display: flex;
+  align-items: center;
+}
+
+.social-network-item:not(:last-child) {
+  margin-right: 0.5rem;
+}
+
+.social-network-image {
+  fill: var(--dark-02);
+  width: 2.8571rem;
+  height: auto;
+}
