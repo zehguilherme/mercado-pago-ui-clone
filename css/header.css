@@ -13,8 +13,12 @@
   padding: 1rem 1.4286rem 0;
 }
 
-.logo-small {
+.logo-main-links-container .logo-small {
   width: 50px;
+}
+
+.logo-main-links-container .logo-big {
+  display: none;
 }
 
 .main-navbar .navlink-list {
@@ -39,6 +43,18 @@
 .main-navbar .account-create {
   color: var(--light-01);
   background-color: var(--blue-primary-01);
+}
+
+.main-navbar .navlink-list-item:has(.account) {
+  display: none;
+}
+
+.main-navbar .navlink-list-item:has(.sell-tools) {
+  display: none;
+}
+
+.main-navbar .navlink-list-item:has(.help) {
+  display: none;
 }
 
 .main-navbar .menu-toggle,
@@ -144,4 +160,40 @@
   border-left: 0.5px;
   border-color: rgba(51, 51, 51, 0.2);
   border-style: solid;
+}
+
+@media screen and (min-width: 768px) {
+  .logo-main-links-container .logo-small {
+    display: none;
+  }
+
+  .logo-main-links-container .logo-big {
+    display: inline;
+  }
+
+  .main-navbar .navlink {
+    padding: 0.572rem 1.7143rem;
+  }
+
+  .main-navbar .navlink-list-item:has(.help) {
+    display: inline;
+  }
+
+  .main-navbar .help {
+    padding-right: 1.4286rem;
+    padding-left: 1.4286rem;
+    color: var(--dark-03);
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 2.4286rem;
+  }
+
+  .main-navbar .menu-toggle {
+    display: none;
+  }
+
+  .mobile-navbar,
+  .mobile-navbar.mobile-navbar-active {
+    display: none;
+  }
 }
