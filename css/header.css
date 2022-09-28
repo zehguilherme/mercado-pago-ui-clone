@@ -13,8 +13,12 @@
   padding: 1rem 1.4286rem 0;
 }
 
-.logo-small {
+.logo-main-links-container .logo-small {
   width: 50px;
+}
+
+.logo-main-links-container .logo-big {
+  display: none;
 }
 
 .main-navbar .navlink-list {
