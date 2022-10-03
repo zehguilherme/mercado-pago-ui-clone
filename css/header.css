@@ -40,9 +40,18 @@
   background-color: var(--blue-secondary-01);
 }
 
+.main-navbar .enter:hover {
+  background-color: #479ad133;
+  color: #32b3ff;
+}
+
 .main-navbar .account-create {
   color: var(--light-01);
   background-color: var(--blue-primary-01);
+}
+
+.main-navbar .account-create:hover {
+  background-color: var(--blue-primary-02);
 }
 
 .main-navbar .navlink-list-item:has(.account) {
@@ -186,6 +195,21 @@
     font-size: 1rem;
     font-weight: 400;
     line-height: 2.4286rem;
+    position: relative;
+  }
+
+  .main-navbar .help::before {
+    content: "";
+    position: absolute;
+    width: 1px;
+    height: 24px;
+    top: 8px;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+  .main-navbar .help:hover {
+    color: var(--dark-01);
   }
 
   .main-navbar .menu-toggle {
@@ -195,5 +219,30 @@
   .mobile-navbar,
   .mobile-navbar.mobile-navbar-active {
     display: none;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .main-navbar .navlink-list-item:has(.account) {
+    display: list-item;
+  }
+
+  .main-navbar .account,
+  .main-navbar .sell-tools {
+    padding: 0;
+    margin-right: 1.4286rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 2.4286rem;
+    color: #00000099;
+  }
+
+  .main-navbar .account:hover,
+  .main-navbar .sell-tools:hover {
+    color: var(--dark-01);
+  }
+
+  .main-navbar .navlink-list-item:has(.sell-tools) {
+    display: list-item;
   }
 }
